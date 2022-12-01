@@ -1,0 +1,31 @@
+import java . util .Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int num = sc.nextInt();
+        int choice = sc.nextInt();
+        int sum = 0, prod = 1;
+        for (int i = 1; i <= num; i++) {
+            sum = sum + i;
+            prod = prod * i;
+
+        }
+        if (choice == 1) 
+        {
+            System.out.println(sum);
+
+        }
+        else if (choice == 2) {
+            System.out.println(prod);
+
+        }
+        else {
+            System.out.println(-1);
+        }
+
+
+
+    }
+}
