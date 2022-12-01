@@ -1,0 +1,25 @@
+
+public class Solution { 
+
+    public static int binarySearch(int[] arr, int x) 
+    {
+        int i = 0, j = arr.length - 1, mid;
+        while(i <= j)
+        {
+            mid = (i + j) / 2;
+            if(arr[mid] == x)
+            {
+                return mid;
+            }
+            if(arr[mid] < x)
+            {
+                i = mid + 1;
+            }
+            if(arr[mid] > x)
+            {
+                j = mid -1;
+            }
+        }
+        return -1;
+    }
+}
