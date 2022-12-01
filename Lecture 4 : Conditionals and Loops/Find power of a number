@@ -1,0 +1,26 @@
+import java . util.Scanner;
+
+public class Solution {
+    	public static void main(String[] args) {
+
+
+        int base, exponent, expo;
+        Scanner sc = new Scanner(System.in);
+
+base = sc.nextInt();
+        
+
+exponent = sc.nextInt();
+
+        int power = 1;
+        
+while(exponent != 0) {
+    power = power*base;
+        --exponent;
+}
+        
+        System.out.println(power);
+
+
+    }
+}
