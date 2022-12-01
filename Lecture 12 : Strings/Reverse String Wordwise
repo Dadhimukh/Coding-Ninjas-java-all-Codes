@@ -1,0 +1,36 @@
+import java.util.*;
+public class Solution {
+// 	public static String reverseWordWise(String input) {
+// 		int end = input.length();
+// 		int i = input.length() - 1;
+// 		String output = "";
+// 		while (i >= 0) {
+// 			if (input.charAt(i) == ' ') {
+// 				output = output + input.substring(i + 1, end) + " ";
+// 				end = i;
+// 			}
+// 			i--;
+// 		}
+// 		output += input.substring(i + 1, end);
+// 		return output;
+// 	}
+// }
+
+    
+    	public static String reverseWordWise(String S) {
+    
+        String[] str = S.split(" ");
+        String res="";
+        for(int i=str.length-1;i>=0;i--){
+            if(i>0){
+                res+=str[i]+" ";
+                
+            }else{
+                res+=str[i];
+            }
+        }
+        return res;
+            }
+
+            
+        }
