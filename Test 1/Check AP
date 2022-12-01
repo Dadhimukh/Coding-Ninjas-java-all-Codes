@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class main{
+public static void main(String[]args){
+Scanner s = new Scanner (System.in);
+int n= s.nextInt();
+int prev = s.nextInt();
+int current = s.nexInt();
+int count = 3;             //which no has to be taken now
+int d = current - prev;
+prev = current;
+while(count <= n){
+current = s.nextInt();
+int temp = current - prev;
+if(temp != d){
+System.out.println("false");
+return;
+}
+count++;
+prev  = current;
+}
+System.out.println("true");
+}
+}
