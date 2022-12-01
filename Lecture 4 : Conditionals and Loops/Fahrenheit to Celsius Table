@@ -1,0 +1,30 @@
+
+
+import java.util.Scanner;
+
+public class Solution {
+
+
+    public static void main(String[] args) {
+
+        /* Your class should be named Solution.
+	 	* Read input as specified in the question.
+	 	* Print output as specified in the question.
+		*/
+
+        int S,E,W,C;
+        Scanner s = new Scanner(System.in);	
+
+        S = s.nextInt();
+        E = s.nextInt();
+        W = s.nextInt();
+
+        while (S<=E){
+            C = ((5*(S-32))/9);
+            System.out.println(S+"\t"+C);
+
+            S=S+W;
+        }
+    }
+
+}
